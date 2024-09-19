@@ -55,6 +55,7 @@ class KeyringService {
     return wallets;
   }
 
+  //生成钱包地址
   async newKeyring({
     walletType,
     payload,

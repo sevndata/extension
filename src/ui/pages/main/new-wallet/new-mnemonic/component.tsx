@@ -57,6 +57,8 @@ const NewMnemonic = () => {
 
   const navigate = useNavigate();
 
+  //todo
+  //创建钱包
   const onCreate = async () => {
     if (!mnemonicPhrase) {
       toast.error(t("new_wallet.new_mnemonic.error_phrase_blank"));

@@ -38,6 +38,8 @@ const useClearSelectedAccountStats = () => {
   };
 };
 
+//todo
+//创建钱包
 export const useCreateNewWallet = () => {
   const { wallets, updateWalletState } = useWalletState(
     ss(["wallets", "updateWalletState"])

@@ -20,9 +20,14 @@ class WalletController implements IWalletController {
     return values.enc === undefined;
   }
 
+  //创建钱包
   async createNewWallet(props: INewWalletProps): Promise<IWallet> {
+
     const exportedWallets = storageService.walletState.wallets;
+    //生成钱包地址的方法
+    console.log("生成钱包地址的参数是",props)
     const address = await keyringService.newKeyring(props);
+    console.log("生成钱包地址是",address)
     const account: IAccount = {
       id: 0,
       name: "Account 1",
